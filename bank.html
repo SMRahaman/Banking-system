@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center mt-5"><span class="fs-1 fw-semibold text-danger">Prime Internet Banking
+                system</span></h1>
+    </header>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 bg-dark p-5 me-2">
+                <h3 class="text-white text-center fs-3">Deposit</h3>
+                <h4 class="text-white text-center fs-1">$<span id="dep_totoal">00</span></h4>
+            </div>
+            <div class="col-lg-4 bg-info p-5 me-2">
+                <h3 class="text-white text-center fs-3">Withdraw</h3>
+                <h4 class="text-white text-center fs-1">$<span id="withdraw_total">00</span></h4>
+            </div>
+            <div class="col-lg-4 bg-primary p-5 mt-2">
+                <h3 class="text-white text-center fs-3">Balance</h3>
+                <h4 class="text-white text-center fs-1">$<span id="balance_total">00</span></h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 bg-dark p-5 m-3">
+                <h3 class="text-white text-center">Deposit</h3>
+                <div class=" from-group my-4">
+                    <input type=" text" class="form-control" id="depAammount_field" placeholder="Enter Your Amount">
+                </div>
+                <div class=" from-group text-center">
+                    <button class="btn btn-danger" id="deposit_btn">Deposit</button>
+                </div>
+            </div>
+            <div class="col-lg-5 bg-info p-5 m-3">
+                <h3 class="text-white text-center">Withdraw</h3>
+                <div class=" from-group my-4">
+                    <input type=" text" class="form-control" id="withdraw_field" placeholder="Enter Your Amount">
+                </div>
+                <div class=" from-group text-center">
+                    <button class="btn btn-danger" id="withdraw_btn">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
